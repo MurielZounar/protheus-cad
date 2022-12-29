@@ -1,0 +1,85 @@
+<nav>
+  <div class="menu">
+    <ul>
+      <li [ngClass]="{ list: true, active: active[0] }" (click)="activeLink(0)">
+        <a href="#">
+          <span class="text">Home</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/home.svg"
+              alt="Botão com desenho de uma casa"
+              title="Home"
+            />
+          </span>
+        </a>
+      </li>
+      <li [ngClass]="{ list: true, active: active[1] }" (click)="activeLink(1)">
+        <a href="#">
+          <span class="text">Cadastrar</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/cadastrar.svg"
+              alt="Botão com desenho de busto de homem"
+              title="Cadastrar"
+            />
+          </span>
+        </a>
+      </li>
+      <li [ngClass]="{ list: true, active: active[2] }" (click)="activeLink(2)">
+        <a href="#">
+          <span class="text">Alterar</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/alterar.svg"
+              alt="Botão com desenho de lápis"
+              title="Alterar"
+            />
+          </span>
+        </a>
+      </li>
+      <li [ngClass]="{ list: true, active: active[3] }" (click)="activeLink(3)">
+        <a href="#">
+          <span class="text">Excluir</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/lixeira.svg"
+              alt="Botão com desenho de lixeira"
+              title="Excluir"
+            />
+          </span>
+        </a>
+      </li>
+      <li [ngClass]="{ list: true, active: active[4] }" (click)="activeLink(4)">
+        <a href="#">
+          <span class="text">Buscar</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/buscar.svg"
+              alt="Botão com desenho de lupa"
+              title="Buscar"
+            />
+          </span>
+        </a>
+      </li>
+      <li [ngClass]="{ list: true, active: active[5] }" (click)="activeLink(5)">
+        <a href="#">
+          <span class="text">Listar Todos</span>
+          <span>
+            <img
+              class="icon"
+              src="../../../../../assets/icons/lista.png"
+              alt="Botão com desenho de lista"
+              title="Listar Todos"
+            />
+          </span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
+</nav>

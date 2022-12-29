@@ -1,0 +1,56 @@
+@import url('../../../../../styles.css');
+
+.search {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.title {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.btn {
+  position: relative;
+  top: -5px;
+  background-color: transparent;
+}
+
+hr {
+  width: 90%;
+  margin: 20px 0;
+}
+
+.code, .name, .address {
+  width: 80%;
+}
+
+.code p, .name p, .address p {
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.result {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--text-color);
+}

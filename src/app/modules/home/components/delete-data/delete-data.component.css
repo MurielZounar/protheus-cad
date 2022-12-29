@@ -1,0 +1,36 @@
+@import url('../../../../../styles.css');
+
+.list {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .text {
+  width: 90%;
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+.list .trash {
+  width: 15px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: 0 0 10px 3px rgba(130, 255, 243, 0.505);
+  transition: 0.3s;
+}
+
+.list .trash:hover {
+  box-shadow: 0 0 10px 3px rgb(255, 49, 49);
+}
+
+.list .text, .list .trash {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

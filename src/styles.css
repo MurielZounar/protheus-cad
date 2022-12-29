@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+  --bg-body-color: rgb(29,23,37);
+  --theme-color: rgb(130, 255, 242);
+  --text-color: rgb(220, 220, 233);
+  --default-margin-top: 90px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  
+  background: var(--bg-body-color);
+  /* background: linear-gradient(45deg, rgb(18, 14, 22) 18%, rgba(27,22,34,1) 50%, rgb(72, 62, 91)   100%); */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  height: calc(fit-content + 15px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(195, 195, 195, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+h2 {
+  margin-top: var(--default-margin-top);
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 42px;
+}
+
+ul {
+  list-style: none;
+}
+
+input, select {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(82, 82, 107);
+  color: var(--text-color);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+textarea:focus, input:focus, button {
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Todos os Clientes</h2>
+  <div class="content">
+    <ul>
+      <li *ngFor="let clients of clientList | async" class="list">
+        <div class="dot"></div>
+        <p>{{ clients.code }} - {{ clients.name }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

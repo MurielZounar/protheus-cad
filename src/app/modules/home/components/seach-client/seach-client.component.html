@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Buscar Cliente</h2>
+  <div class="content">
+    <div class="search">
+      <p class="title">Código do Cliente:</p>
+      <div class="data">
+        <input type="text" placeholder=" Ex. 000001" #id />
+        <button class="btn" (click)="getClient(id.value)">
+          <img src="../../../../../assets/icons/buscar-azul.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <hr />
+    <div *ngIf="itsOk" class="result">
+      <ul>
+        <li *ngFor="let client of clientData | async">
+          <div class="code">
+            <p>
+              <strong>Código:</strong> {{ client.name }} <strong>Loja:</strong>
+              {{ client.store }}
+            </p>
+          </div>
+          <div class="name">
+            <p><strong>Nome:</strong> {{ client.name }}</p>
+            <p><strong>Apelido:</strong> {{ client.reducedName }}</p>
+            <p><strong>Tipo:</strong> {{ client.type }}</p>
+          </div>
+          <div class="address">
+            <p><strong>CEP:</strong> {{ client.zipCode }}</p>
+            <p><strong>Endereço:</strong> {{ client.address }}</p>
+            <p><strong>Complemento:</strong> {{ client.Complement }}</p>
+            <p><strong>Município:</strong> {{ client.city }}</p>
+            <p><strong>UF:</strong> {{ client.state }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Exluir Cliente</h2>
+  <div class="content">
+    <ul>
+      <li *ngFor="let client of clientList | async" class="list">
+        <span class="text">{{ client.code }} - {{ client.name }} 1</span>
+        <button class="trash" title="Excluir" (click)="deleteClient(client)">
+          <img
+            src="../../../../../assets/icons/lixeira-azul.svg"
+            alt="Desenho de Lixeira"
+          />
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

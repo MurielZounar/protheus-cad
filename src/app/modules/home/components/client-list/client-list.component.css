@@ -1,0 +1,29 @@
+ul {
+  width: 90%;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.list p {
+  margin: 15px 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  background-color: var(--theme-color);
+  border-radius: 50%;
+  box-shadow: 0 0 7px 2px rgba(0, 234, 255, 0.656);
+}
+
+.list:hover .dot{
+  background-color: rgb(255, 236, 66);
+  box-shadow: 0 0 7px 2px rgba(255, 236, 66, 0.656);
+}
